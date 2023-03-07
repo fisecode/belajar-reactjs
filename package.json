@@ -1,0 +1,19 @@
+{
+  "name": "belajar-reactjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-react": "^7.18.6",
+    "concurrently": "^7.6.0",
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir public -w",
+    "serve": "lite-server --baseDir public",
+    "start": "concurrently \"yarn build\" \"yarn serve\"",
+    "dev" : "yarn build && yarn serve"
+  }
+}
