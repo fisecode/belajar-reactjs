@@ -13,7 +13,6 @@
   "scripts": {
     "build": "babel src --out-dir public -w",
     "serve": "lite-server --baseDir public",
-    "start": "concurrently \"yarn build\" \"yarn serve\"",
-    "dev" : "yarn build && yarn serve"
+    "start": "concurrently \"yarn build\" \"yarn serve\""
   }
 }
